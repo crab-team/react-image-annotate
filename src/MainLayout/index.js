@@ -271,12 +271,12 @@ export const MainLayout = ({
                 !hideClone &&
                   !nextImageHasRegions &&
                   activeImage.regions && { name: "Clone" },
-                !hideSettings && { name: "Configuración" },
+                !hideSettings && { name: "Settings" },
                 !hideFullScreen &&
                   (state.fullScreen
                     ? { name: "Window" }
                     : { name: "Fullscreen" }),
-                !hideSave && { name: "Guardar" },
+                !hideSave && { name: "Save" },
               ].filter(Boolean)}
               onClickHeaderItem={onClickHeaderItem}
               onClickIconSidebarItem={onClickIconSidebarItem}
