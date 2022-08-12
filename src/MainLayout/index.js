@@ -62,6 +62,7 @@ type Props = {
   onRegionClassAdded: () => {},
   hideHeader?: boolean,
   hideHeaderText?: boolean,
+  hideRightSidebar?: boolean,
 }
 
 export const MainLayout = ({
@@ -79,6 +80,7 @@ export const MainLayout = ({
   hideSettings = false,
   hideFullScreen = false,
   hideSave = false,
+  hideRightSidebar = false,
 }: Props) => {
   const classes = useStyles()
   const settings = useSettings()
@@ -397,7 +399,9 @@ export const MainLayout = ({
                   history={state.history}
                   onRestoreHistory={action("RESTORE_HISTORY")}
                 />,
-              ].filter(Boolean)}
+              ]
+                .filter(Boolean)
+                .filter((a) => !hideRightSidebar)}
             >
               {canvas}
             </Workspace>

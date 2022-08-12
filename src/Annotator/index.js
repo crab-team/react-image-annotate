@@ -55,6 +55,7 @@ type Props = {
   hideSettings?: boolean,
   hideFullScreen?: boolean,
   hideSave?: boolean,
+  hideRightSidebar?: boolean,
 }
 
 export const Annotator = ({
@@ -98,6 +99,7 @@ export const Annotator = ({
   hideSettings,
   hideFullScreen,
   hideSave,
+  hideRightSidebar,
   allowComments,
 }: Props) => {
   if (typeof selectedImage === "string") {
@@ -198,6 +200,7 @@ export const Annotator = ({
         hideSettings={hideSettings}
         hideFullScreen={hideFullScreen}
         hideSave={hideSave}
+        hideRightSidebar={hideRightSidebar}
       />
     </SettingsProvider>
   )
