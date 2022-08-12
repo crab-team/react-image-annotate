@@ -274,7 +274,7 @@ export const MainLayout = ({
                   (state.fullScreen
                     ? { name: "Window" }
                     : { name: "Fullscreen" }),
-                !hideSave && { name: "Save" },
+                !hideSave && { name: "Guardar" },
               ].filter(Boolean)}
               onClickHeaderItem={onClickHeaderItem}
               onClickIconSidebarItem={onClickIconSidebarItem}
