@@ -269,7 +269,7 @@ export const MainLayout = ({
                 !hideClone &&
                   !nextImageHasRegions &&
                   activeImage.regions && { name: "Clone" },
-                !hideSettings && { name: "Settings" },
+                !hideSettings && { name: "Configuración" },
                 !hideFullScreen &&
                   (state.fullScreen
                     ? { name: "Window" }
