@@ -1,6 +1,10 @@
 {
   "name": "mtc-react-image-annotate",
   "version": "0.0.1",
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "engineStrict": true,
   "dependencies": {
     "@emotion/react": "^11.7.0",
     "@emotion/styled": "^11.6.0",
