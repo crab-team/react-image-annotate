@@ -1,4 +1,4 @@
-# React Image Annotate
+# MTC - React Image Annotate
 
 [![npm version](https://badge.fury.io/js/react-image-annotate.svg)](https://badge.fury.io/js/react-image-annotate)
 
