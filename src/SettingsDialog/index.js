@@ -13,7 +13,7 @@ export const SettingsDialog = ({ open, onClose }) => {
   const settings = useSettings()
   return (
     <Dialog open={open || false} onClose={onClose}>
-      <DialogTitle>Settings</DialogTitle>
+      <DialogTitle>Configuración</DialogTitle>
       <DialogContent style={{ minWidth: 400 }}>
         <Survey
           variant="flat"
@@ -24,32 +24,32 @@ export const SettingsDialog = ({ open, onClose }) => {
             questions: [
               {
                 type: "boolean",
-                title: "Show Crosshairs",
+                title: "Mostrar puntos de mira",
                 name: "showCrosshairs",
               },
               {
                 type: "boolean",
-                title: "Show Highlight Box",
+                title: "Mostrar cuadro resaltado",
                 name: "showHighlightBox",
               },
-              {
-                type: "boolean",
-                title: "WASD Mode",
-                name: "wasdMode",
-              },
-              {
-                type: "dropdown",
-                title: "Video Playback Speed",
-                name: "videoPlaybackSpeed",
-                defaultValue: "1x",
-                choices: ["0.25x", "0.5x", "1x", "2x"],
-              },
+              // {
+              //   type: "boolean",
+              //   title: "WASD Mode",
+              //   name: "wasdMode",
+              // },
+              // {
+              //   type: "dropdown",
+              //   title: "Video Playback Speed",
+              //   name: "videoPlaybackSpeed",
+              //   defaultValue: "1x",
+              //   choices: ["0.25x", "0.5x", "1x", "2x"],
+              // },
             ],
           }}
         />
       </DialogContent>
       <DialogActions>
-        <Button onClick={onClose}>Close</Button>
+        <Button onClick={onClose}>Cerrar</Button>
       </DialogActions>
     </Dialog>
   )
